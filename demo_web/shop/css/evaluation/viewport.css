@@ -1,0 +1,45 @@
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+
+@media (min-width:521px)and (max-width:767px){
+.tab-content{padding:10px}
+
+td a, .time span,.company ,.class, .list_content, .list_detail a{
+	font-size: 12px;
+}
+
+.table > thead > tr > th{
+	font-size: 14px;
+}
+}
+
+@media (max-width:520px){
+.tab-content{
+	padding:10px
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	font-size: 16px;
+}
+
+td a, .time span,.company ,.class, .list_content, .list_detail a{
+	font-size: 12px;
+}
+
+.table > thead > tr > th{
+	font-size: 14px;
+}
+.nav-tabs > li a{
+	font-size: 14px;
+}
+}

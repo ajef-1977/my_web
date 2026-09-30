@@ -1,0 +1,117 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+ 	font-family: Microsoft YaHei; 
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {font-size: 36px;}
+h4 {font-size: 20px;}
+h5 {font-size: 16px;}
+h6 {font-size: 12px;}
+
+li {list-style-type: none}
+
+a{
+	text-decoration: none!important;
+}
+a:hover, a:focus{
+	color:#c80000;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	float: none;
+	text-align: center;
+}
+
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.wrapper{
+	max-width: 860px;
+}
+.btn-login {
+	max-width: 300px;	
+    background-color: #CB0000;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    text-transform: uppercase;
+    border-color: #CB0000;
+}
+.btn-login:hover,
+.btn-login:focus {
+    color: #fff;
+    background-color: #CB0000;
+    border-color: #CB0000;
+}
+.main_frame {
+    max-width: 980px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+.frame01 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.frame01 label {
+    font-size: 18px;
+}
+.add_field_button {
+    padding: 7px 20px;
+    margin-right: 12px;    
+}
+.input_fields_wrap .form-control {
+    width: 80%;
+    float: left;
+}
+.remove_field {
+    color: #fff;
+    padding: 7px 20px;
+    margin: 0px 0px 0px 16px;   
+    background: #c80000;
+    border-radius: 5px;
+    float: left;
+}
+.remove_field:hover {
+    color: #000;
+}
+input.btn-login {
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto;
+}
+
+.address_list{
+    padding: 5px 5px 10px;
+}
+
+.address_list_remove{
+    padding: 5px 5px 10px;
+	margin: 0px;
+}
+
+
+
+
+

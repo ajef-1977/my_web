@@ -1,0 +1,227 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+ 	font-family: Microsoft YaHei; 
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {	font-size: 36px;}
+h4 {	font-size: 20px;}
+h5 {	font-size: 16px;}
+h6 {	font-size: 12px;}
+
+li {list-style-type: none}
+
+a{
+	text-decoration: none!important;
+}
+
+a:hover, a:focus{
+	color:#c80000;
+}
+.clear{
+	clear:both;
+}
+
+.btn{
+	padding: 2px
+}
+
+.btn-group{
+    position: relative;
+    top: -30px;
+}
+
+figcaption .fa{
+	color: #fff;
+    vertical-align: middle;
+    margin: 0px auto;
+    padding: 5px;
+    font-size: 18px;
+}
+
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.wrapper{
+	max-width: 100%;
+}
+
+.grid{
+	padding: 10px;
+	max-width: 100%;
+}
+
+.grid li{
+	width:100%;
+	padding: 0px;
+	margin-bottom: 20px;
+    box-shadow: 1px 1px 15px #B7B5B5;
+    overflow: hidden;	
+}
+
+.grid figcaption{
+	background: #121C27;
+}
+
+
+.product_info_t{
+	font-size: 14px;
+	color: #fff;
+    margin: 10px 5px 5px;	
+}
+
+.product_info_list{
+	width: 100%;
+	margin: 0px auto 0px;
+	display: block;
+}
+
+.product_info_left{
+	font-size: 12px;
+	color: #fff;
+	float: left;
+	margin: 0px 10px 0px 10px;
+	letter-spacing: 2px;
+}
+
+.product_info_right{
+	font-size: 12px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.product_frame{
+	width: 100%;
+	height: auto;
+	min-height: 120px;
+	padding: 10px;
+	border:1px solid #ccc;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;	
+	overflow: hidden;
+}
+
+.product_name{
+	font-size: 14px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.product_name h4{
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.product_price{
+	font-size: 30px;
+	font-weight: bold;
+	color:#FF0202;
+}
+
+.yan{
+	font-size: 14px;
+	font-weight: bold;
+	color:#555;	
+}
+
+.pagination > li > a, .pagination > li > span{
+	color:#555;
+}
+
+
+
+
+
+/* 購物車動畫*/
+
+#msg {
+	position: fixed;
+	top: 50px;
+	right: 35px;
+	z-index: 10000;
+	width: 1px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	background: #c80000;
+	display: none
+}
+
+
+.u-flyer {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: fixed;
+	z-index: 9999;
+}
+
+.funtion_item{
+	position: relative;
+    top: 7px;
+}
+
+.fa {
+    vertical-align: middle;
+    color: white;
+    font-size: 25px;
+	margin: 0px;
+}
+
+.addcar{
+	padding: 5px 10px ;
+}
+
+.glyphicon{
+    font-size: 23px;
+    display: block;
+    top: -5px;
+    left: -5px;	
+}
+
+.glyphicon:before {
+	color: #fff;
+	visibility: visible;
+}
+.glyphicon.glyphicon-heart-empty:checked:before {
+	display: block;
+	color: #fff;
+   content: "\e005";
+}
+input[type=checkbox].glyphicon{
+    visibility: hidden;
+}
+
+input[type="radio"], input[type="checkbox"]{
+	margin: 0px;
+}
+
+.btn-favorite{
+    padding: 11px 15px;
+	background: #d9534f;
+}
+
+
+
+
+
+
+
+

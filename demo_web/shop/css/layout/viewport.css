@@ -1,0 +1,133 @@
+
+@media (min-width:1200px) {
+.menu_1{
+	display: block;
+}
+
+.menu_2{
+	display: none;
+}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+.menu_1{
+	display: block;
+}
+
+.menu_2{
+	display: none;
+}	
+	
+.footer_content{
+	width: 67%;
+}
+}
+
+@media (min-width:768px) and (max-width:991px){
+.login{
+	float: right;
+}
+
+.menu_1{
+	display: block;
+}
+
+.menu_2{
+	display: none;
+}
+
+.footer_content{
+	width: 81%;
+}
+}
+
+@media (min-width:521px)and (max-width:767px){
+.serach{
+	max-width:50%;
+	float:left;
+}
+
+.login{
+	float: right;
+	margin-top: 0px;
+}
+
+.dialog {
+    right: 5px;
+}
+
+.menu_1{
+	display: none;
+}
+
+.menu_2{
+	display: block;
+}
+
+.menu_2 p{
+    float: left;
+}
+
+.dl-menuwrapper:first-child{
+	padding: 5px 0px 5px;
+}
+
+.dl-menuwrapper .dl-menu.dl-menuopen{
+	margin-top: 10px;
+}
+
+.carousel{
+	margin: 0px auto 15px;
+}
+
+.footer_content{
+	width: 88%;
+}
+}
+
+@media (max-width:520px){
+.topad {
+    line-height: 20px;
+}
+
+.ser_input{
+	width: 90%;
+}	
+	
+.login_link{
+    padding: 6px 10px;
+}
+	
+.login{
+	float: left;
+	margin-top: -3px;
+}
+
+.dialog {
+    left: 10px;
+}
+
+.menu_1{
+	display: none;
+}
+
+.menu_2{
+	display: block;
+}
+
+.menu_2 p{
+    float: none;
+}
+
+.menu_trigger{
+	float: none;
+}
+
+.carousel{
+	margin: 0px auto 15px;
+}
+
+.footer_content{
+	width: 100%;
+}
+}

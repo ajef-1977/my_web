@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 4 日期選擇器 - 中文支援</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Datepicker CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h2>Bootstrap 4 日期選擇器 - 中文支援</h2>
+        <form>
+            <div class="form-group">
+                <label for="datepicker">選擇日期：</label>
+                <div class="input-group date" id="datepicker">
+                    <input type="text" class="form-control" placeholder="請選擇日期">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <ul class="nav nav-tabs" id="Tab">
+            <li class="nav-item">
+                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab_item_01"
+                    type="button">Home</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_item_02"
+                    type="button">Profile</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab_item_03"
+                    type="button">Contact</button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab_item_01">
+                1
+            </div>
+            <div class="tab-pane fade" id="tab_item_02">
+                2
+            </div>
+            <div class="tab-pane fade" id="tab_item_03">
+                3
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Datepicker JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
+    <!-- Datepicker Language Pack for Chinese -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.zh-TW.min.js">
+    </script>
+
+    <!-- Initialize Datepicker -->
+    <script>
+        $(document).ready(function () {
+            $('#datepicker').datepicker({
+                format: 'yyyy/mm/dd', // 日期格式
+                autoclose: true, // 選擇日期後自動關閉
+                todayHighlight: true, // 高亮當天日期
+                language: 'zh-TW' // 設置語言為繁體中文
+            });
+        });
+    </script>
+</body>
+
+</html>

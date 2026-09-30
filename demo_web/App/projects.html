@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>App - 資訊中心</title>
+    <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/projects.css" rel="stylesheet">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+
+    </nav>
+
+    <main class="page">
+
+        <div class="main_body">
+
+
+            <div class="tab_wrap">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tab_item_1" role="tab">我的物件</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab_item_2" role="tab">入帳管理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tab_item_3" role="tab">報修管理</a>
+                    </li>
+                </ul>
+
+                <!-- Tabs Content -->
+                <div class="tab-content" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="tab_item_1">
+                        <div class="content_wrap">
+
+                            <h4 class="text-center">物件清單</h4>
+
+                            <div class="table_frame">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="">物件代碼</th>
+                                            <th class="">物件地址</th>
+                                            <th class="">合約訖日</th>
+                                            <th class="">出租狀態</th>
+                                            <th class="">租金</th>
+                                            <th class=""></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>120039</td>
+                                            <td>98874 板橋龍山寺巷3號4樓</td>
+                                            <td>2025-11-24</td>
+                                            <td>已出租</td>
+                                            <td class="money">25000</td>
+                                            <td>
+                                                <div class="group">
+                                                    <a class="page-link" href="project-details.html">檢視詳細</a>
+                                                    <a class="page-link" href="project-maintenance.html">報修狀態</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 分頁 -->
+                            <div class="pagination_wrap">
+
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">第一頁</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item" aria-current="page">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">下十頁</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">最後一頁</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="tab-pane fade" id="tab_item_2">
+                        <div class="content_wrap">
+
+                            <div class="content_frame">
+                                <div class="title">入帳清單 title</div>
+                                <div class="content">入帳清單欄位</div>
+                            </div>
+
+                            <div class="content_frame">
+                                <ul class="list_group">
+
+                                    <li class="list">
+                                        <div class="label">入帳帳號</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="label">入帳金額</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="label">約定入帳日</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                    <li class="list width_full">
+                                        <div class="label">物件地址</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab_item_3">
+                        <div class="content_wrap">
+
+                            <div class="content_frame">
+                                <div class="title">報修清單 title</div>
+                                <div class="content">報修清單欄位</div>
+                            </div>
+
+                            <div class="content_frame">
+                                <ul class="list_group">
+                                    <li class="list width_full">
+                                        <div class="label">物件地址</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="label">報修日期</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                    <li class="list">
+                                        <div class="label progress_tracking">報修進度追蹤(已申請/已結案)</div>
+                                        <div class="text">
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div class="btn_group">
+                                <button class="btn" type="button" onclick="location.href='apply_repair.html';">
+                                    申請報修
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+</body>
+
+<script src="./js/jquery_3.6.0.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<!-- 主選單 -->
+<script src="./js/navbar.js"></script>
+<script src="./js/function.js"></script>
+
+
+<script>
+
+</script>
+
+</html>

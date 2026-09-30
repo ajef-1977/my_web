@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AJ Studio</title>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viewport.css">
+
+</head>
+
+<body>
+    <works_header>
+        <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn"
+                onclick="closeNav()">&times;</a>
+            <!-- <h2 class="border-frame"><a onclick="closeNav()" href="index.html">Home</a></h2>
+            <h2><a onclick="closeNav()" href="works1.html">CIS</a></h2>
+            <h2><a onclick="closeNav()" href="works2.html">Graphic Design</a></h2>
+            <h2><a onclick="closeNav()" href="works3.html">Web Shop product</a></h2>
+            <h2><a onclick="closeNav()" href="works4.html">Web Design</a></h2>
+            <h2><a onclick="closeNav()" href="works5.html">APP UI Design</a></h2>
+            <h2><a onclick="closeNav()" href="works6.html">3DS Max Works</a></h2>
+            <h2><a onclick="closeNav()" href="works7.html">Paint</a></h2>
+            <h2><a onclick="closeNav()" href="works8.html">Photo</a></h2>
+            <h2><a onclick="closeNav()" href="demo1.html">Effect 1</a></h2>
+            <h2><a onclick="closeNav()" href="demo2.html">Effect 2</a></h2> -->
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()"><i class="menu-button fa fa-bars" aria-hidden="true"></i></span>
+        <!--            <div class="chevron-container"> <a href="#"><span onclick="scrollPage()"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a> </div>-->
+    </works_header>
+
+
+    <div class="demo_container">
+        <a class="logo_link" href="index.html">
+            <img src="images/logo.svg">
+        </a>
+        <h1 class="works_title">瀑布流效果展示<p>試著更改裝置尺寸，按F5更新</p>
+        </h1>
+
+        <div id="wrapper">
+
+            <div id="container">
+
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-01.jpg" /> </div>
+                    <strong>配色1</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"> <img class="lazy" src="images/masonry/c-02.jpg" /></div>
+                    <strong>配色2</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-03.jpg" /></div>
+                    <strong>配色3</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-04.jpg" /></div>
+                    <strong>配色4</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-05.jpg" /></div>
+                    <strong>配色5</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-06.jpg" /></div>
+                    <strong>配色6</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"> <img class="lazy" src="images/masonry/c-07.jpg" /></div>
+                    <strong>配色7</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-08.jpg" /></div>
+                    <strong>配色8</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-09.jpg" /></div>
+                    <strong>配色9</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-10.jpg" /></div>
+                    <strong>配色10</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-11.jpg" /></div>
+                    <strong>配色11</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"> <img class="lazy" src="images/masonry/c-12.jpg" /></div>
+                    <strong>配色12</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-13.jpg" /></div>
+                    <strong>配色13</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-14.jpg" /></div>
+                    <strong>配色14</strong>
+                </div>
+                <div class="item">
+                    <div class="imgholder"><img class="lazy" src="images/masonry/c-15.jpg" /></div>
+                    <strong>配色15</strong>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="work_footer">
+        <p class="text-center">2021 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <!-- <script src='https://code.jquery.com/jquery1-2.2.4.js'></script>-->
+    <!-- <script src='js/jquery-3.3.1.js'></script> -->
+    <script src="js/index.js"></script>
+
+    <script type="text/javascript" src="js/masonry/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="js/masonry/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/masonry/jquery.masonry.min.js"></script>
+
+    <script type="text/javascript">
+        //瀑布流
+        $(function () {
+            var $container = $('#container');
+            $container.imagesLoaded(function () {
+                $container.masonry({
+                    itemSelector: '.item',
+                    isAnimated: true,
+                    columnWidth: 20,
+                });
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

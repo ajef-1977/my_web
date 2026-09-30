@@ -1,0 +1,260 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+ 	font-family: Microsoft YaHei; 
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {	font-size: 36px;}
+h4 {	font-size: 20px;}
+h5 {	font-size: 16px;}
+h6 {	font-size: 12px;}
+
+li {list-style-type: none}
+
+a{
+	text-decoration: none!important;
+}
+
+a:hover, a:focus{
+	color:#c80000;
+}
+
+hr{
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	float: none;
+	text-align: center;
+}
+
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.wrapper{
+	max-width: 800px;
+}
+
+.table{
+	margin-bottom: 0px;
+}
+
+.table > thead > tr > th{
+    font-size: 16px;	
+	text-align: center;
+	color: #fff;
+	background: #CB0000;
+}
+
+.consultation-list .fa{
+	margin: 0px;
+    color: #fff;	
+}
+
+.panel-default > .panel-heading{
+	text-align: center;
+	padding: 0px;
+	background: #ddd;	
+}
+
+td.list_content{
+	min-width: 100px;
+}
+
+.list_detail{
+	padding: 0px!important;
+}
+
+.list_detail a{
+	display: block;
+	padding: 2px;
+	margin: 8px 10px 10px 0px;
+    background: #CB0000;
+    border-radius: 10px;
+	color: #fff;
+}
+
+
+
+/*評論列表*/
+
+.panel-body{
+	padding: 10px;
+}
+
+.panel-body .item {
+    border: 1px solid #FFFFFF;
+}
+
+.panel-body  dl {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.panel-body  dt {
+	font-size: 14px;
+	color: #B80000;
+    float: left;
+	margin-bottom: 5px;
+    text-align: right;
+    width: 100px;
+}
+.panel-body  dd {
+	font-size: 12px;
+    float: right;
+    width: 100%;
+	padding-left: 10%;
+}
+
+.panel-body  .content {
+	font-size: 12px;	
+    float: left;
+    width: 100%;
+	margin-bottom: 10px;
+}
+.panel-body  .date-answer {
+    font-size: 12px;
+    line-height: 30px;
+    color: #999999;
+    float: right;
+    margin: 0px 15px;
+}
+
+.panel-body  dt b {
+    float: left;
+    height: 13px;
+    margin: 2px 3px 0 0;
+    width: 14px;
+}
+
+.panel-body  .ask b {
+    background-position: -72px -14px;
+}
+.panel-body  .answer {
+    color: #D75509;
+	margin-bottom: 5px;
+}
+
+.panel-body  .answer b {
+    background-position: -57px -14px;
+}
+
+.re_answer{
+	padding: 5px 50px 5px;
+    background: #FCF7E8;
+}
+
+.frame-01{
+    width: 100%;
+    background: #252525;
+    padding: 5px;
+}
+
+.message{
+    font-size: 16px;
+	float:right;
+	margin-right: 10%;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.width-normal{
+	width: initial!important;
+}
+
+.btn-info{
+	color: #fff!important;
+    background-color: #CB0000 !important;
+    border-color: #CB0000!important;
+}
+
+
+.btn-info:hover{
+	color: #fff!important;
+    background-color: #CB0000 !important;
+    border-color: #CB0000!important;
+}
+
+.pagination > li > a, .pagination > li > span{
+	color: #000;
+} 
+
+label{
+	font-weight: normal;
+}
+
+.response{
+	color: #fff;
+	font-size: 12px;	
+	margin: 30px 50px 0px;
+	padding: 5px 20px;
+	display: block;
+	background: #888;
+	border-radius: 3px;	
+}
+
+.response:hover{
+	color: #fff;
+}
+
+
+.more{
+	color: #fff;
+	font-size: 12px;
+	padding: 5px;
+	display: block;
+	background: #888;
+	border-radius: 3px;
+}
+
+.more:hover{
+	color: #fff;
+}
+
+.panel-group{
+	margin-bottom: 5px;
+}
+
+
+.time{
+	width: 25%;
+}
+
+.user_name{
+	width: 17%;
+}
+
+.class{
+	width: 10%;
+}
+
+.theme{
+	width: 40%;
+}
+
+.open{
+	width: 12%;
+}
+
+
+
+
+
+
+

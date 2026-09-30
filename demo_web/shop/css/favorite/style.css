@@ -1,0 +1,225 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+ 	font-family: Microsoft YaHei; 
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {	font-size: 36px;}
+h4 {	font-size: 20px;}
+h5 {	font-size: 16px;}
+h6 {	font-size: 12px;}
+
+li {list-style-type: none}
+
+a{
+	text-decoration: none!important;
+}
+a:hover, a:focus{
+	color:#c80000;!important;
+	
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	float: none;
+	text-align: center;
+}
+
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.love_header_list{
+	background: #CB0000;
+	text-align: center;
+}
+
+.love_header_list:hover{
+	background: #CB0000!important;
+}
+
+.shop_header_list{
+	background: #CB0000;
+	text-align: center;
+}
+
+.shop_header_list:hover{
+	background: #CB0000!important;
+}
+
+.love_header_list th{
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.shop_header_list th{
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+
+.table > thead > tr > th{
+	font-size: 16px;	
+	vertical-align: middle;	
+}
+
+
+.list_date{
+	font-size: 16px;
+	margin-right: 10px;
+}
+
+
+.table{
+	border: 1px solid #ccc;
+}
+
+.table td{
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	vertical-align: middle;	
+	border: 0px;
+	padding: 5px;
+}
+
+.table tr{
+	height: 40px;
+}
+
+.table tr:hover{
+	background: #ccc;
+}
+
+
+.checkbox label {
+	min-height: 20px;
+	font-weight: normal;
+	cursor: pointer;
+	padding: 7px;
+	margin: 0px auto;
+}
+
+.big-checkbox + label {
+    padding: 18px;
+}
+ 
+.big-checkbox:checked + label:after {
+    font-size: 28px;
+    left: 6px;
+}
+ 
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+	margin: 0px;
+}
+
+.btn-default:hover{
+	background:#F99696;
+}
+
+.nav-tabs > li{
+	width: 50%;
+}
+
+.pagination > li > a, .pagination > li > span{
+	color: #000;
+}
+
+
+
+tr:nth-child(2n){background-color:#eee;} //返回偶數序的子元素
+tr:nth-child(2n+1){ background-color:#fff;} //返回奇數序的子元素
+
+
+/*******切换css********/
+
+
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #CB0000 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #CB0000; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:10px}
+
+.card {
+	max-width: 850px;
+	background: #FFF none repeat scroll 0% 0%;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); 
+	margin: 30px auto;
+	border-radius: 5px;
+}
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #F99696;
+    border-color: #adadad;
+}
+
+.photo_list_item img{
+	max-width: 60px;
+	margin: 0px auto;
+}
+
+.brand_name a:hover{
+	color: #c80000;
+}
+
+.regular-checkbox {
+    display: none;
+}
+ 
+.regular-checkbox + label {
+    background-color: #fafafa;
+    border: 1px solid #cacece;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+ 
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+ 
+.regular-checkbox:checked + label {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+}
+ 
+.regular-checkbox:checked + label:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    color: #99a1a7;
+}
+ 
+ 
+

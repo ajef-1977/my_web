@@ -1,0 +1,83 @@
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+
+@media (min-width:521px)and (max-width:767px){
+.tab-content{padding:10px}
+
+.card  ul li a{
+	font-size: 14px;
+}
+
+.table > thead > tr > th{
+    font-size: 14px;	
+}
+
+td, td span, td p{
+	font-size: 12px;
+}
+
+.list_detail a{
+	font-size: 12px;
+}
+
+.demo span, .form-inline .form-control{
+	font-size: 12px;
+}
+
+.dl-horizontal dt {
+    float: left;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+}
+
+@media (max-width:520px){
+.tab-content{padding:10px}
+
+.card  ul li a{
+	font-size: 14px;
+}
+
+.table > thead > tr > th{
+    font-size: 14px;	
+}
+
+td, td span, td p{
+	font-size: 12px;
+}
+
+.list_detail a{
+	font-size: 12px;
+}
+
+.demo span, .form-inline .form-control{
+	font-size: 12px;
+}
+
+.dl-horizontal dt {
+    float: left;
+    overflow: hidden;
+    clear: left;
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dl-horizontal dd{
+    width: 35%;	
+}
+
+}

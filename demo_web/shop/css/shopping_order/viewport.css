@@ -1,0 +1,50 @@
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+
+@media (min-width:521px)and (max-width:767px){
+.tab-content{padding:10px}
+
+.table > thead > tr > th{
+    font-size: 14px;	
+}
+
+td, td span, td p{
+	font-size: 12px;
+}
+
+.order-content p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+}
+
+@media (max-width:520px){
+.tab-content{padding:10px}
+
+.table > thead > tr > th{
+    font-size: 14px;	
+}
+
+td, td span, td p{
+	font-size: 12px;
+}
+
+.list_detail a{
+	font-size: 12px;
+}
+
+.order-content p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+}

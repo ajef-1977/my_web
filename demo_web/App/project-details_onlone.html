@@ -1,0 +1,189 @@
+{"status":"error","message":"Missing projectId"}
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>兆基屋管 資訊中心</title>
+
+    <!-- icons -->
+    <link href="./imgs/bglogo.svg" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet">
+
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/project-details.css" rel="stylesheet">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- nav bar from templates/navbar.php-->
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="./imgs/logo.svg" alt="">
+            </a>
+            <button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navbarNav"
+                aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarNav" style="">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://demo.smp.17life.me/">兆基生活商城</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://cchapp.ai/megasigpro.php"
+                            target="_blank">兆好簽</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://cchapp.ai/projects.php">資訊中心</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://cchapp.ai/userinfo.php">個人檔案</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page">
+
+        <div class="main_body">
+
+            <!-- 動態生成資料 -->
+            <div class="content_wrap">
+                <a class="btn btn_return" href="projects.php">
+                    <i class="bi bi-chevron-left"></i>
+                    返 回
+                </a>
+
+                <h4 class="text-center">物件詳細資料</h4>
+
+                <div class="content_frame">
+                    <div class="title">物件資料</div>
+                    <ul class="list_group">
+                        <li class="list">
+                            <div class="label">物件代碼</div>
+                            <div class="text" id="projectcode"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">物件類型</div>
+                            <div class="text" id="builtype"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">有無車位</div>
+                            <div class="text" id="parknum"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">負責業務</div>
+                            <div class="text" id="sales"></div>
+                        </li>
+                        <li class="list width_full">
+                            <div class="label">物件地址</div>
+                            <div class="text" id="address"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">物件樓層</div>
+                            <div class="text" id="layer"></div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content_frame">
+                    <div class="title">我的合約</div>
+                    <ul class="list_group">
+                        <li class="list">
+                            <div class="label">租約起始日</div>
+                            <div class="text" id="sdate"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">租約訖日</div>
+                            <div class="text" id="edate"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">租金</div>
+                            <div class="text" id="fee"></div>
+                        </li>
+                        <li class="list">
+                            <div class="label">約定入帳日</div>
+                            <div class="text" id="feeday"></div>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="btn_group">
+                    <button class="btn" type="button" onclick="location.href='apply_repair.html';">
+                        申請報修
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="./js/jquery_3.6.0.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./css/bootstrap-datepicker_1.9.0.min.js"></script>
+<script src="./css/bootstrap-datepicker.zh-TW.min.js"></script>
+
+<script>
+    // 除錯用:印出Session內容
+    // var session = {"myqsladdress":"localhost","UserRights":{"":{".IsAdmin":false,".Groups":[-3]},"admin":{"<global>":{"mask":"ADESPIM","groupRights":{"-1":{"mask":"ADESPIM","pages":[]}}},"api_log":{"mask":"ADESPIM","groupRights":{"-1":{"mask":"ADESPIM","pages":[]}}},"login_breezysign":{"mask":"ASM","groupRights":{"-1":{"mask":"ASM","pages":[]}}},"member_login":{"mask":"ADESPIM","groupRights":{"-1":{"mask":"ADESPIM","pages":[]}}},"member_points":{"mask":"ASM","groupRights":{"-1":{"mask":"ASM","pages":[]}}},"member_profile":{"mask":"M","groupRights":{"-1":{"mask":"M","pages":[]}}},"payment_manage":{"mask":"AEDS","groupRights":{"-1":{"mask":"AEDS","pages":[]}}},".IsAdmin":true,".Groups":["-1"]}},"LastReadRights":1736923205,"SessionLevel":1,"UserID":"admin","AccessLevel":"User","providerCode":"00","UserName":"admin","GroupID":"admin","runnerSession":"euwecap34or01em3xjum","OwnerID":"1","_member_profile_OwnerID":"1","_member_payment_OwnerID":"1","_member_points_OwnerID":"1","_login_breezysign_OwnerID":"1","UserData":{"id_member":"1","member_name":"","member_email":"admin","login_password":"aaa123","is_active":1,"create_datetime":"2024-04-18 13:54:09","last_update_datetime":"2024-04-18 13:54:09","reset_token":null,"reset_date":null,"account_from":"","id_company":"0","realname":"\u7e3d\u7ba1\u7406\u8005","member_type":"0","breezysign_uuid":null},"AutomaticLogin":false,"MyURL":"\/project-details.php","members_provider_field":true,"projectDetailItem":"2"};
+    // console.log(session);
+
+    // 取得存在於$_SESSION中的被點擊之object index
+    const projectDetailItem = 2;
+
+    // AJAX 向管理部e化系統正式機請求資料
+    $.ajax({
+        url: 'https://cchouse-eservice.cc-house.cc/emdsh/api/lsdata',
+        method: 'POST',
+        contentType: 'application/json', // 設定請求的 Content-Type
+        dataType: 'json', // 預期的回應類型為 JSON
+        data: JSON.stringify({
+            idnum: "A123357987"
+        }),
+        success: function (response) {
+            try {
+                // 取出response的資料
+                const projectKey = projectDetailItem // 根據清單頁面點擊之項目取得的object index
+                const dt = response.dt
+                const projectCode = dt[projectKey].pj.projectcode;
+                const builType = dt[projectKey].pt.builtype;
+                const parkNum = dt[projectKey].pj.parknum === null ? "無車位" : dt[projectKey].parknum;
+                const sales = dt[projectKey].lsct.sales === null ? "無業務" : dt[projectKey].lsct.sales;
+                const address = dt[projectKey].pt.address;
+                const layer = dt[projectKey].pt.layer;
+                const sdate = dt[projectKey].lsct.sdate;
+                const edate = dt[projectKey].lsct.edate;
+                const fee = dt[projectKey].lsct.fee === null ? "無資料" : dt[projectKey].lsct.fee;
+                const feeday = dt[projectKey].lsct.feeday === null ? "無資料" : dt[projectKey].lsct.feeday;
+
+                // 更新 HTML
+                document.querySelector('#projectcode').innerText = projectCode;
+                document.querySelector('#builtype').innerText = builType;
+                document.querySelector('#parknum').innerText = parkNum;
+                document.querySelector('#sales').innerText = sales;
+                document.querySelector('#address').innerText = address;
+                document.querySelector('#layer').innerText = layer;
+                document.querySelector('#sdate').innerText = sdate;
+                document.querySelector('#edate').innerText = edate;
+                document.querySelector('#fee').innerText = fee;
+                document.querySelector('#feeday').innerText = feeday;
+
+            } catch (err) {
+                console.error('DOM帶資料時發生錯誤:', err);
+            }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.error('AJAX 錯誤:', textStatus, errorThrown);
+            console.error('完整的錯誤回應:', jqXHR.responseText);
+        }
+    });
+</script>
+
+
+</html>

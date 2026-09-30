@@ -1,0 +1,113 @@
+img { max-width:100%; }
+
+a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease; 
+	}
+    a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+        filter: alpha(opacity=50); /* IE7 */
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+
+/* Container */
+#slide_bg {
+	background:rgba(249,249,249,0.8);
+	margin:40px auto 10px;
+	max-width:960px;
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
+	padding-left:0px;
+	padding-right:0px;
+}
+
+
+
+
+/* Thumbnail Box */
+.caption {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 20px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+.caption .span4, .caption .span8 {
+    padding: 0px 20px;
+}
+
+
+.caption h3 {
+    color: #a83b3b;
+    line-height: 2rem;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    }
+    .caption p {
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #a83b3b;
+        }
+        .btn.btn-mini {
+            background: #a83b3b;
+            border-radius: 0 0 0 0;
+            color: #fbf4e0;
+            font-size: 0.63rem;
+            text-shadow: none !important;
+            }
+
+.carousel-control {
+	position: absolute;
+	top: 40%;
+	left: 15px;
+	width: 30px;
+	height: 40px;
+	margin-top: -20px;
+	font-size: 30px;
+	font-weight: 100;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+	background: #222;
+	border: 1px solid #fff;
+	-webkit-border-radius: 23px;
+	-moz-border-radius: 23px;
+	border-radius: 23px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+.carousel-control.right{
+	margin-right:15px;
+	height:30px;
+}
+.carousel-control.left{
+	height:30px;
+}
+
+.dosh_line{
+	border-right: 1px dotted #CCCCCC;
+}
+#bpic_div {
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 999;
+	left: 0px;
+	top: 0px;
+}
+#bpic {
+	border: 5px solid rgba(255,255,255,1);
+	margin-top: -175px;
+	margin-left: -250px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}

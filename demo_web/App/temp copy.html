@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <!-- partial template from templates/head.php-->
+    <?php include './templates/head.php'; ?>
+
+    <style>
+        html,
+        body {
+            scroll-behavior: smooth;
+            /* 平滑滾動 */
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            /* 確保畫面有足夠高度讓滾動生效 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar from templates/navbar.php-->
+    <?php include './templates/navbar.php'; ?>
+
+    <main class="page">
+
+        <header class="header">
+            <div id="top" class="header_title">
+                <h2 class data-aos="fade-up" data-aos-duration="1500">兆基屋管 -
+                    您最佳的選擇</h2>
+            </div>
+            <div class="header_bg">
+            </div>
+        </header>
+
+        <div id="rent" class="main_body">
+
+            <!-- 591物件 -->
+            <section class="object_frame">
+
+                <div class="object_search">
+
+                    <div class="select_group">
+                        <select class="form-select area" aria-label="Default select">
+                            <option selected disabled="disabled">依地區篩選</option>
+                            <option value="0">不限</option>
+                            <option value="1">臺北市</option>
+                            <option value="2">新北市</option>
+                            <option value="3">基隆市</option>
+                            <option value="4">桃園市</option>
+                            <option value="5">新竹市</option>
+                            <option value="6">苗栗市</option>
+                            <option value="7">臺中市</option>
+                            <option value="8">雲林縣</option>
+                            <option value="9">嘉義市</option>
+                            <option value="10">臺南市</option>
+                            <option value="11">高雄市</option>
+                            <option value="12">屏東縣</option>
+                            <option value="25">南海島</option>
+                            <option value="26">釣魚臺</option>
+                            <option value="27">連江縣</option>
+                            <option value="64">宜蘭縣</option>
+                            <option value="65">彰化縣</option>
+                            <option value="66">南投縣</option>
+                            <option value="67">澎湖縣</option>
+                            <option value="68">金門縣</option>
+                            <option value="69">臺東縣</option>
+                            <option value="70">花蓮縣</option>
+                        </select>
+                        <select class="form-select fee" aria-label="Default select">
+                            <option selected disabled="disabled">依金額篩選</option>
+                            <option value="0">不限</option>
+                            <option value="1">10,000元以下</option>
+                            <option value="2">10,000 - 20,000元</option>
+                            <option value="3">20,000 - 30,000元</option>
+                            <option value="4">30,000元以上</option>
+                        </select>
+                        <select class="form-select pattern" aria-label="Default select">
+                            <option selected disabled="disabled">依格局</option>
+                            <option value="0">不限</option>
+                            <option value="1">套房</option>
+                            <option value="2">兩房</option>
+                            <option value="3">三房</option>
+                            <option value="4">四房以上</option>
+                        </select>
+                        <select class="form-select sort" aria-label="Default select">
+                            <option selected disabled="disabled">排序</option>
+                            <option value="0">不限</option>
+                            <option value="1">租金從低到高</option>
+                            <option value="2">租金從高到低</option>
+                            <!-- <option value="2">刊登時間優先</option> -->
+                        </select>
+                    </div>
+
+                    <form class="form-inline">
+                        <!-- <input class="form-control keyword" type="search" placeholder="搜 尋" aria-label="Search"> -->
+                        <button class="btn btn_search" type="submit">搜 尋</button>
+                    </form>
+
+                </div>
+
+
+                <div class="object_group">
+
+                    <!-- <a class="object" href="#">
+                        <div class="img_frame">
+                            <img class="" src="./imgs/object/object_img_01.jpg" alt="">
+                        </div>
+                        <div class="content_frame">
+                            <div class="label">整層住家 | 泉兆基-摩天鎮大套房出租</div>
+                            <div class="tag_group">
+                                <div class="tag">隨時可遷入</div>
+                                <div class="tag">可開伙</div>
+                                <div class="tag">免服務費</div>
+                            </div>
+                            <div class="info_frame">
+                                <div class="block">1房/14.7坪</div>
+                                <div class="name">摩天鎮</div>
+                                <div class="address">汐止區大同路三段11111</div>
+                            </div>
+                            <div class="time_frame">02-02 最新上架</div>
+                            <div class="price_frame">
+                                <div class="price">10,000
+                                    <span>元/月</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </a> -->
+
+                </div>
+
+                <!-- 分頁 -->
+                <!-- <div class="pagination_wrap">
+
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">第一頁</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">下十頁</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">最後一頁</a>
+                        </li>
+                    </ul>
+
+                </div> -->
+
+            </section>
+
+            <!-- 兆好簽廣告區塊 -->
+            <section class="MegaSigPro_frame">
+                <a class="banner_01" href="https://cchapp.ai/megasigpro.php">
+                    <div class="logo_ms">
+                        <img class src="./imgs/logo_MS.png" alt="MegaSigPro ">
+                    </div>
+                    <div class="postion">
+                        <div class="title" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+                            兆好簽</div>
+                        <div class="text" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300"
+                            data-aos-easing="ease-in-out">無紙化線上簽約，一鍵管理所有合約，安全、快速又方便</div>
+                    </div>
+                </a>
+            </section>
+
+            <!-- 商品 -->
+            <section class="shop_item">
+                <ul class="item_group">
+                    <li class="item">
+                        <a class href="javascript:;">
+                            <img class src="./imgs/commodity/commodity_01.jpg" alt="商品">
+                        </a>
+                        <div class="content">
+                            <p class="label">推薦商品</p>
+                            <div class="directions">
+                                人氣熱門商品!!
+                            </div>
+                            <div class="price_group">
+                                <div class="price">$1,000</div>
+                                <div class="special_offer">$399</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a class href="javascript:;">
+                            <img class src="./imgs/commodity/commodity_02.jpg" alt="商品">
+                        </a>
+                        <div class="content">
+                            <p class="label">推薦商品</p>
+                            <div class="directions">
+                                人氣熱門商品!!
+                            </div>
+                            <div class="price_group">
+                                <div class="price">$1,000</div>
+                                <div class="special_offer">$399</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a class href="javascript:;">
+                            <img class src="./imgs/commodity/commodity_03.jpg" alt="商品">
+                        </a>
+                        <div class="content">
+                            <p class="label">推薦商品</p>
+                            <div class="directions">
+                                人氣熱門商品!!
+                            </div>
+                            <div class="price_group">
+                                <div class="price">$1,000</div>
+                                <div class="special_offer">$399</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <a class href="javascript:;">
+                            <img class src="./imgs/commodity/commodity_04.jpg" alt="商品">
+                        </a>
+                        <div class="content">
+                            <p class="label">推薦商品</p>
+                            <div class="directions">
+                                人氣熱門商品!!
+                            </div>
+                            <div class="price_group">
+                                <div class="price">$1,000</div>
+                                <div class="special_offer">$399</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="">
+                <a class="banner_02" href="https://demo.smp.17life.me/">
+                    <div class="postion">
+                        <div class="title" data-aos="fade-left" data-aos-duration="800" data-aos-easing="ease-in-out">
+                            兆基生活商城</div>
+                        <div class="text" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300"
+                            data-aos-easing="ease-in-out">輕鬆完成所有生活所需的採購，無論是家居用品、生活電器還是日常必需品，應有盡有。</div>
+                    </div>
+                </a>
+            </section>
+
+            <div class="footer">
+                <div class="about_us">
+                    <div class="caption" data-aos="fade-up" data-aos-duration="700" data-aos-easing="ease-in-out">
+                        關於兆基
+                    </div>
+                    <div class=" text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300"
+                        data-aos-easing="ease-in-out">
+                        兆基管理顧問股份有限公司為台灣規模最大的物業管理公司，在台灣擁有20,000件以上的受託管理物件，並在17個縣市設立37個服務據點以服務全台廣大客群。<br>
+                        兆基管顧積極拓展市場與整合各方資源，致力以專業化管理提升台灣租屋環境水平，以保障房屋資產、維持收益為根本，降地房屋租賃糾紛提升居住品質，打造安心、信賴的物業管理公司。
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div class="copyright">
+        <a href="./privacy_policy.php">隱私權政策</a>
+        <div class="text">兆基集團 © 2025 CHAO CHI PROPERTY MANAGEMENT
+            CONSULTING CO., LTD</div>
+    </div>
+</body>
+
+<script src="./js/jquery_3.6.0.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/aos.js"></script>
+
+<script language="JavaScript" src="./js/function.js"></script>
+
+<script>
+    // 等待 3 秒後滾動到 #rent 區塊（如果目前在頂部）
+    setTimeout(() => {
+        const scrollY = window.scrollY || document.documentElement.scrollTop;
+        if (scrollY === 0) { // 確保當前滾動位置在頂部
+            document.querySelector('#rent').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    }, 3000); // 3000 毫秒 = 3 秒
+</script>
+
+<script>
+    $(document).ready(function () {
+        AOS.init()
+    });
+</script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+<!-- 591廣告物件取資料的js -->
+<script>
+    $(document).ready(async function () {
+        const imageArray = [
+            "imgs/pjpic/1.jpg", "imgs/pjpic/2.jpg", "imgs/pjpic/3.jpg",
+            "imgs/pjpic/4.jpg", "imgs/pjpic/5.jpg", "imgs/pjpic/6.jpg",
+            "imgs/pjpic/7.jpg", "imgs/pjpic/8.jpg", "imgs/pjpic/9.jpg",
+            "imgs/pjpic/10.jpg", "imgs/pjpic/11.jpg", "imgs/pjpic/12.jpg",
+            "imgs/pjpic/13.jpg", "imgs/pjpic/14.jpg"
+        ];
+        const linkArray = [
+            "https://rent.591.com.tw/18095575", "https://rent.591.com.tw/18163757",
+            "https://rent.591.com.tw/17896432", "https://rent.591.com.tw/17088360",
+            "https://rent.591.com.tw/17861971", "https://rent.591.com.tw/16768599",
+            "https://rent.591.com.tw/17649354", "https://rent.591.com.tw/17641725",
+            "https://rent.591.com.tw/17574341", "https://rent.591.com.tw/17109215",
+            "https://rent.591.com.tw/18045481"
+        ]
+        const titleArray = [
+            "兆基|不容錯過/秒殺物件",
+            "兆基|秒殺物件/超值裝潢/全新衛浴",
+            "兆基|雙學區美房靜巷",
+            "兆基|近捷運/學區/黃昏市場/通訊園區/公園",
+            "兆基|近農會/全新裝潢",
+            "兆基|近園區/小資美房/上班十分鐘",
+            "兆基|近台北醫學大學/信義區首選/高檔裝潢",
+            "兆基|小資首選/回家就像渡假",
+            "兆基|捷運站5分鐘/全新套房/近市場",
+            "兆基|市中心精選/交通便利/生活機能佳",
+            "兆基|投資首選/高報酬率/穩定收租",
+            "兆基|稀有釋出/錯過不再/立即預約",
+            "兆基|全新建案/即將完工/歡迎參觀",
+            "兆基|精選物件/多種選擇/滿足需求"
+        ];
+
+        // 初始化搜尋參數
+        let searchParams = {
+            number: 60,
+            page: 1,
+            citySelected: null,
+            patternSelected: null,
+            feemin: 0,
+            feemax: 99999
+            // keyword: null
+        }
+        // 預設排序為 null
+        let sortASC = null;
+
+        // 初始化時載入所有專案資料
+        fetchProjects(searchParams);
+
+        // 監聽所有 select 下拉選單的變更
+        $('.form-select').on('change', function () {
+            // 取得選中的值
+            let selectedValue = $(this).val(); // 選取的 value
+            let filterType = $(this).attr('class').split(' ').find(cls => cls !==
+            'form-select'); // 取得 class 名稱 (排除 'form-select')
+
+
+            // 準備要傳送的資料
+            if (filterType === 'area') {
+                if (selectedValue === '0') {
+                    searchParams.citySelected = null;
+                } else {
+                    searchParams.citySelected = selectedValue;
+                }
+            }
+
+            if (filterType === 'fee') {
+                if (selectedValue === '0') {
+                    searchParams.feemin = 0;
+                    searchParams.feemax = 99999;
+                } else if (selectedValue === '1') {
+                    searchParams.feemin = 0;
+                    searchParams.feemax = 9999;
+                } else if (selectedValue === '2') {
+                    searchParams.feemin = 10000;
+                    searchParams.feemax = 19999;
+                } else if (selectedValue === '3') {
+                    searchParams.feemin = 20000;
+                    searchParams.feemax = 29999;
+                } else if (selectedValue === '4') {
+                    searchParams.feemin = 30000;
+                    searchParams.feemax = 99999;
+                }
+            }
+
+            if (filterType === 'pattern') {
+                if (selectedValue === '0') {
+                    searchParams.patternSelected = null;
+                } else if (selectedValue === '1') {
+                    searchParams.patternSelected = '1';
+                } else if (selectedValue === '2') {
+                    searchParams.patternSelected = '2';
+                } else if (selectedValue === '3') {
+                    searchParams.patternSelected = '3';
+                } else if (selectedValue === '4') {
+                    searchParams.patternSelected = '4';
+                }
+            }
+
+            if (filterType === 'sort') {
+                if (selectedValue === '0') {
+                    sortASC = null;
+                } else if (selectedValue === '1') {
+                    sortASC = true;
+                } else if (selectedValue === '2') {
+                    sortASC = false;
+                }
+            }
+            console.log('篩選change後 searchParams:', searchParams); // 除錯用
+            console.log('篩選change後 sortASC:', sortASC); // 除錯用
+        })
+
+        // 監聽搜尋關鍵字輸入框
+        // $('.keyword').on('input', function () {
+        //     searchParams.keyword = $(this).val();
+        //     console.log('searchParams.keyword:', searchKeyword); // 除錯用
+        // });
+
+        // 監聽搜尋按鈕
+        $('.btn_search').on('click', function (e) {
+            e.preventDefault();
+            fetchProjects(searchParams);
+        });
+
+        // 取得專案資料
+        function fetchProjects(searchParams) {
+            $.ajax({
+                url: '/api/search_allproject.php',
+                method: 'GET',
+                dataType: 'json',
+                data: searchParams,
+                success: function (response) {
+                    // console.log('ajax後的searchparam', searchParams) // 除錯用
+                    const filterData = filterUndefinedFee(response.data);
+                    // console.log('filterData:', filterData); // 除錯用
+                    updateProjectList(filterData);
+                },
+                error: function (error) {
+                    console.error('發生錯誤:', error);
+                }
+            });
+        }
+
+        // 先過濾掉ofee/builtype為null的資料
+        function filterUndefinedFee(data) {
+            return Object.values(data).filter(i => i.ofee !== null && i.builtype !== null)
+        }
+
+        // 更新專案列表
+        function updateProjectList(data) {
+            // 操作dom
+            const objectGroup = document.querySelector('.object_group');
+            objectGroup.innerHTML = ''; // 清空原本的內容
+
+            let sortedData
+            // console.log('sortASC:', sortASC); // 除錯用
+            if (sortASC !== null) {
+                sortedData = Object.values(data).sort((a, b) => {
+                    let priceA = parseFloat(a.ofee);
+                    let priceB = parseFloat(b.ofee);
+                    return sortASC ? priceA - priceB : priceB - priceA;
+                })
+
+                sortedData.forEach((project, index) => {
+                    // 如果 index >= 10 就跳過後面的處理
+                    if (index >= 10) {
+                        return;
+                    }
+
+                    const imageSrc = imageArray[index];
+                    const link591 = linkArray[index];
+                    const title = titleArray[index];
+
+                    const projectHtml = `
+            <a class="object" target="_blank" href="${link591}">
+                <div class="img_frame">
+                    <img class="pjpic" src="${imageSrc}" alt="">
+                </div>
+                <div class="content_frame">
+                    <div class="label pjad_title">${title}</div>
+                    <div class="tag_group">
+                        <div class="tag pjtag_title">${project.tag1 || '近捷運'}</div>
+                        <div class="tag pjtag_title">${project.tag2 || '有電梯'}</div>
+                        <div class="tag pjtag_title">${project.tag3 || '可開伙'}</div>
+                    </div>
+                    <div class="info_frame">
+                        <div class="block">${project.pattern}/${project.ping || 17}坪</div>
+                        <div class="name area">${project.builtype}</div>
+                        <div class="address">${project.address}</div>
+                    </div>
+                    <div class="time_frame">02-02 最新上架</div>
+                    <div class="price_frame">
+                        <div class="price">${project.ofee || '資料待補'}<span>元/月</span></div>
+                    </div>
+                </div>
+            </a>`;
+                    objectGroup.insertAdjacentHTML('beforeend', projectHtml);
+                })
+
+            } else {
+                data.forEach((project, index) => {
+                    // 如果 index >= 10 就跳過後面的處理
+                    if (index >= 10) {
+                        return;
+                    }
+
+                    const imageSrc = imageArray[index];
+                    const link591 = linkArray[index];
+                    const title = titleArray[index];
+
+                    const projectHtml = `
+                    <a class="object" target="_blank" href="${link591}">
+                        <div class="img_frame">
+                            <img class="pjpic" src="${imageSrc}" alt="">
+                        </div>
+                <div class="content_frame">
+                    <div class="label pjad_title">${title}</div>
+                    <div class="tag_group">
+                        <div class="tag pjtag_title">${project.tag1 || '近捷運'}</div>
+                        <div class="tag pjtag_title">${project.tag2 || '有電梯'}</div>
+                        <div class="tag pjtag_title">${project.tag3 || '可開伙'}</div>
+                    </div>
+                    <div class="info_frame">
+                        <div class="block">${project.pattern}/${project.ping || 17}坪</div>
+                        <div class="name area">${project.builtype}</div>
+                        <div class="address">${project.address}</div>
+                    </div>
+                    <div class="time_frame">02-02 最新上架</div>
+                    <div class="price_frame">
+                        <div class="price">${project.ofee || '資料待補'}<span>元/月</span></div>
+                    </div>
+                </div>
+            </a>`;
+                    objectGroup.insertAdjacentHTML('beforeend', projectHtml);
+                })
+            }
+        }
+
+    })
+</script>
+
+
+
+
+</html>

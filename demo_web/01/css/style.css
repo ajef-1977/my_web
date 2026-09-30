@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+/* 	font-family: Microsoft JhengHei; */
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {	font-size: 36px;}
+h4 {	font-size: 24px;}
+h5 {	font-size: 18px;}
+h6 {	font-size: 14px;}
+
+img.cover {
+  object-fit: cover;
+}
+
+sp{
+	display: block;
+	height: 150px;
+}
+
+textarea{
+	width: 100%;
+}
+
+.clear{
+	float: none;
+	clear: both;
+}
+
+.page_bg{
+	width: 100vw;
+	max-width: 100%;
+	height: auto;
+	background-image: url('../img/bg1.jpg');
+	background-attachment: fixed;
+}
+
+.logo{
+	width: 270px;
+    height: auto;
+	margin-left: 20%;
+}
+
+.logo_frame{
+	width: 100%;
+	text-align: left;
+	position:fixed;
+	z-index: 900;
+}
+
+.bar{
+	background-image: url('../img/logo_bar.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+    height: 80px;
+	box-shadow: 1px 5px 5px #aaa;
+}
+
+#nav {top: 50px;right: 20px;list-style: none;margin: 0;position: fixed;z-index:1000;}
+#nav li {margin-bottom: 2px;}
+#nav a {background: #ededed;color: #666;display: block;	font-size: 12px;padding: 5px 10px;text-decoration: none;}
+#nav a:hover {background: #dedede;}
+#nav .current a {background: #E37F31;color: #ededed;}
+#container {margin: 0 auto;	width: 800px;}
+.section {min-height: 50vh;padding: 20px 20px;}
+.section p:last-child {	margin-bottom: 0;}
+
+.show{
+	width: 100%;
+	height: 400px;
+	margin: 20px auto;
+
+}
+
+.kwicks {
+	max-width:100%;
+	height: 100%;
+}
+.kwicks > li {
+	max-width:100%;
+	height: 100%;
+}
+
+.panel-1{
+	width:100vw;
+	height:auto;
+	background-image: url('../img/pic_01.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.panel-2{
+	width:100vw;
+	height:100%;
+	background-image: url('../img/pic_02.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.panel-3{
+	width:100vw;
+	height:100%;
+	background-image: url('../img/pic_01.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.panel-4{
+	width:100vw;
+	height:100%;
+	background-image: url('../img/pic_02.jpg');
+	background-position: center;
+	background-size: cover;
+}
+.title{
+	font-family: -webkit-pictograph;
+	text-align: center;
+}
+
+.title h2{
+	background-color: rgba(174, 88, 21, 0.6);
+    margin-bottom: 20px;
+    padding: 5px;
+    color: #3C3837;
+}
+
+.title_holder {
+	width:100%;
+	height: 3px;
+	background-image:url(../img/title_holder_border.png);
+	background-repeat:repeat-x;
+	display:block;
+	margin-bottom: 80px;
+}
+
+
+.pic_frame{
+	display:block;
+	height:450px;
+	overflow: hidden;
+	background-image: url('../img/about_pic.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.box{
+	width: 100%;
+	height: 100px;
+	background-color: #555;
+}
+
+
+.bannerImage img{
+	width: 100%;
+	height: auto;
+}
+
+.caption{
+	min-height: 230px;
+	background-color: rgba(254,254,254,0.55);
+	margin: 0px;
+}
+
+
+.about_text{
+	padding-top: 30px;
+	padding-left: 20px;
+	margin-bottom: 100px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.2pt;
+    line-height: 18px;
+}
+
+.contact_us{
+	position:fixed;
+	top: 20px;
+	background-image: inital;
+}
+
+.contact_pic_div{
+	margin-top: 40px;
+}
+
+.contact_form{
+	padding-top: 30px;
+}
+
+
+
+.news_text_div{
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #CACACA;
+	border-radius: 10px;
+	background-color: rgba(254,254,254,0.4);
+	box-shadow: 1px 3px 8px rgba(132, 132, 132, 0.35);
+}
+
+.news_text_title{
+	padding: 10px;
+}
+
+.news_text_title h5{
+	font-weight: bold;
+}
+
+.news_text_content h6{
+	padding: 10px;
+	line-height: 20px;
+	letter-spacing: 1px;
+}
+
+.contact_div{
+	margin-bottom: 20px;
+}
+
+.contact_pic_div img{
+	width: 100%;
+}
+
+
+.footer{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 20px;
+    width: 100%;
+	background-color: rgba(104, 53, 14, 0.55);
+}
+
+.footer h6{
+	color: #fff;
+	line-height: 20px;
+}
+
+.block {
+	height:300px;
+	background: blue;
+	margin-bottom: 20px;
+}
+
+
+

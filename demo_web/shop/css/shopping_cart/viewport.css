@@ -1,0 +1,58 @@
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+
+}
+
+@media (min-width:521px)and (max-width:767px){
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 10px 10px;
+    overflow: hidden;
+}
+
+.buy td p{
+	margin: 5px 0px;
+	font-size: 12px;
+}
+
+.btn-black{
+	font-size: 14px;
+	padding: 5px;
+	color: #fff;
+	background: #000;	
+}
+}
+
+@media (max-width:520px){
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px;
+    overflow: hidden;
+}	
+
+.btn-shop {
+	margin: 10px;
+}
+
+.buy td p{
+	margin: 5px 0px;
+	font-size: 12px;
+}
+
+.btn-black{
+	font-size: 12px;
+	padding: 5px;	
+	color: #fff;
+	background: #000;	
+}
+}

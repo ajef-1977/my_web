@@ -1,0 +1,24 @@
+body main.page .main_body {
+  width: 100%;
+}
+body main.page .main_body .content_wrap {
+  max-width: 1140px;
+  padding: 30px 15px 0;
+  margin: 0 auto 0;
+}
+body main.page .main_body .content_wrap .table_frame {
+  max-width: 100%;
+  max-height: calc(100vh - 300px);
+  margin: 0 auto 0;
+  overflow: auto;
+}
+body main.page .main_body .content_wrap .btn_group {
+  text-align: center;
+  margin: 20px auto 20px;
+}
+body main.page .main_body .content_wrap .btn_group button {
+  min-width: 120px;
+  color: #fff;
+  letter-spacing: 1px;
+  background: var(--color_main);
+}/*# sourceMappingURL=project-maintenance.css.map */

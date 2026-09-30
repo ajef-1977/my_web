@@ -1,0 +1,38 @@
+
+@media (min-width:1200px) {
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+}
+
+@media (min-width:768px) and (max-width:991px){
+.carousel{
+	margin: 0px auto 15px;
+}
+
+.content_7{
+    margin: 10px auto 10px;
+}
+}
+
+@media (min-width:521px)and (max-width:767px){
+.carousel{
+	margin: 0px auto 15px;
+}
+
+.content_7{
+    margin: 10px auto 10px;
+}
+}
+
+@media (max-width:520px){
+.carousel{
+	margin: 0px auto 15px;
+}
+
+.content_7{
+    margin: 10px auto 10px;
+}
+}

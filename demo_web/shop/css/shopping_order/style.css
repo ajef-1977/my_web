@@ -1,0 +1,128 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+ 	font-family: Microsoft YaHei; 
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {	font-size: 36px;}
+h4 {	font-size: 20px;}
+h5 {	font-size: 16px;}
+h6 {	font-size: 12px;}
+
+li {list-style-type: none}
+
+a{
+	text-decoration: none!important;
+}
+
+a:hover, a:focus{
+	color:#c80000;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	float: none;
+	text-align: center;
+}
+
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.wrapper{
+	max-width: 860px;
+}
+
+/* 訂單明細 */
+.order-frame{
+	width: 100%;
+	max-width: 850px;
+	margin: 0px auto;
+	border: 1px solid #D1D1D1;
+	border-radius: 5px;
+}
+
+.order-title{
+	padding: 10px;
+	background: #c80000;
+}
+
+.order-title-left{
+	color: #fff;
+	margin-left: 5%;
+}
+
+.order-title-right{
+	color: #fff;
+	margin-right: 5%;
+}
+
+.order-company{
+	padding: 3px;
+	background: #2A2A2A;
+}
+
+.order-company span{
+	color: #fff;
+}
+
+.order-content{
+	padding: 15px 15px 0px;
+    background: #fcf8e3;	
+}
+
+.order-content li{
+	border-bottom: 1px solid #D1D1D1;
+}
+
+.order-content p{
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.total-edit{
+	padding: 5px 10px 5px;
+	margin: 20px 3px 40px;
+}
+
+.total-price{
+	font-size: 18px;
+	margin: 20px 20px 40px;
+	float: right;
+}
+
+.btn-pay{
+	color: #fff;
+    background-color: #CB0000;
+}
+
+.btn-pay:hover{
+	color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+

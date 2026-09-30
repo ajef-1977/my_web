@@ -1,0 +1,137 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0px;
+	padding:0px;
+ 	font-family: Microsoft YaHei; 
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, input, textarea{
+	margin: 0px;
+	padding: 0px;
+}
+
+h1{	font-size: 70px;}
+h2{	font-size: 52px;}
+h3 {	font-size: 36px;}
+h4 {	font-size: 20px;}
+h5 {	font-size: 16px;}
+h6 {	font-size: 12px;}
+
+li {list-style-type: none}
+
+a{
+	text-decoration: none!important;
+}
+
+a:hover, a:focus{
+	color:#c80000;
+}
+
+.clear{
+	clear:both;
+}
+
+.center{
+	float: none;
+	text-align: center;
+}
+
+.main_frame{
+	max-width: 980px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.top_header_list{
+	background: #CB0000;
+	text-align: center;
+}
+
+
+.top_header_list th{
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.top_header_list:hover{
+	background: #CB0000!important;
+}
+
+.table > thead > tr > th{
+	font-size: 16px;	
+	vertical-align: middle;	
+}
+
+
+.table{
+	border: 1px solid #ccc;
+}
+
+.table td{
+	text-align: center;
+	vertical-align: middle;	
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+	vertical-align: middle;	
+}
+
+.table tr{
+	height: 40px;
+}
+
+.table tr:hover{
+	background: #ccc;
+}
+
+
+img.medals {
+    width: 35px;
+}
+
+th {
+    width: 10%;
+}
+td.top10.word {
+    font-size: 26px;
+}
+
+tr:nth-child(2n){background-color:#eee;} //返回偶數序的子元素
+tr:nth-child(2n+1){ background-color:#fff;} //返回奇數序的子元素
+
+
+/*******切换css********/
+.nav-tabs > li{
+	width: 25%;
+}
+
+.nav-tabs { border-bottom: 2px solid #DDD; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+    .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; color: #CB0000 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #CB0000; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+.tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+.tab-pane { padding: 15px 0; }
+.tab-content{padding:20px}
+
+.card {background: #FFF none repeat scroll 0% 0%; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); margin-bottom: 30px; }
+
+
+
+
+.img-responsive{
+	max-width: 60px;
+	height: auto;
+    margin: 0px auto;	
+}
+
+.nav  a{
+	text-align: center;
+}
+
+
+

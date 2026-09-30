@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AJ Studio</title>
+    <link rel='stylesheet prefetch' href='css/bootstrap 4.0/bootstrap_4.0.css'>
+    <link rel='stylesheet prefetch' href='css/font-awesome 4.7.0/font-awesome.css'>
+    <link rel='stylesheet prefetch' href='css/animate_3.7.0.css'>
+    <link rel='stylesheet prefetch' href='css/aos.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viewport.css">
+    <style>
+        /* #Cursor  ================================================== */
+        .cursor,
+        .cursor2,
+        .cursor3 {
+            position: fixed;
+            border-radius: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            pointer-events: none;
+            left: -100px;
+            top: 50%;
+            mix-blend-mode: difference;
+            -webkit-transition: all 300ms linear;
+            transition: all 300ms linear;
+        }
+
+        .cursor {
+            background-color: #fff;
+            height: 0;
+            width: 0;
+            z-index: 99999;
+        }
+
+        .cursor2,
+        .cursor3 {
+            height: 25px;
+            width: 25px;
+            z-index: 99998;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.3s ease-out
+        }
+
+        .cursor2.hover,
+        .cursor3.hover {
+            -webkit-transform: scale(2) translateX(-25%) translateY(-25%);
+            transform: scale(2) translateX(-25%) translateY(-25%);
+            border: none
+        }
+
+        .cursor2 {
+            border: 1px solid #fff;
+            box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
+        }
+
+        .cursor2.hover {
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+        }
+
+        @media screen and (max-width: 990px) {
+
+            .cursor,
+            .cursor2,
+            .cursor3 {
+                display: none
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div id="mySidenav" class="sidenav">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2 class="border-frame">
+                <a class="animated  bounce" onclick="closeNav()" href="#about-me">ABOUT ME</a>
+            </h2>
+            <h2><a onclick="closeNav()" href="works1.html">CIS</a></h2>
+            <h2><a onclick="closeNav()" href="works2.html">Graphic Design</a></h2>
+            <h2><a onclick="closeNav()" href="works3.html">Web Shop product</a></h2>
+            <h2><a onclick="closeNav()" href="works4.html">Web Design</a></h2>
+            <h2><a onclick="closeNav()" href="works5.html">APP UI Design</a></h2>
+            <h2><a onclick="closeNav()" href="works6.html">3DS Max Works</a></h2>
+            <h2><a onclick="closeNav()" href="works7.html">Paint</a></h2>
+            <h2><a onclick="closeNav()" href="works8.html">Photo</a></h2>
+            <h2><a onclick="closeNav()" href="demo1.html">Effect 1</a></h2>
+            <h2><a onclick="closeNav()" href="demo2.html">Effect 2</a></h2>
+            <h2 class="border-frame">
+                <a onclick="closeNav()" href="#contact">CONTACT</a>
+            </h2> -->
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()">
+            <i class="menu-button fa fa-bars" aria-hidden="true"></i>
+        </span>
+        <div class="my-logo">
+            <a class="title"> <img class="" src="images/logo.svg">
+                <!-- <h1>AJ Studio</h1>-->
+                <p>Front-End Developer | Graphic Designer</p>
+            </a>
+        </div>
+        <div class="chevron-container">
+            <a href="#">
+                <span onclick="scrollPage()">
+                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                </span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <section id="about-me" class="about-me row">
+        <!-- wow anim -->
+        <div class="about-me-container wow fadeInUp">
+
+            <div class="col-md-6 col-sm-6 col-xs-12 about-me-text">
+                <div>
+                    <h1>ABOUT ME</h1>
+                    <p> <span>J</span>
+                        effrey 鍾德皇
+                        ，府城古都台南小吃聞名 - 我的故鄉，崑山科技大學-資管系，雖然讀的是資訊，
+                        因為喜歡藝術與設計目前往資訊網頁前端/UIUX設計發展邁進，活到老學到老，期許能到心願的公司並能穩定發展，並與公司共創雙贏
+                        。
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12 about-me-img-container"> <img class="img-responsive"
+                    src="images/photo.png" alt="My Professional Image" /> </div>
+        </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio portfolio-container">
+        <div class="portfolio-container">
+            <h1 class="text-center">WORKS</h1>
+            <div class="row">
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="500">
+                    <a href="works1.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d01.jpg" />
+                            <figcaption>
+                                <h3>CIS</h3>
+                                <p>CIS 企業形象</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-right"
+                    data-aos-duration="1000">
+                    <a href="works2.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d02.jpg" />
+                            <figcaption>
+                                <h3>Graphic Design</h3>
+                                <p>平面設計</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-left"
+                    data-aos-duration="1000">
+                    <a href="works3.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d03.jpg" />
+                            <figcaption>
+                                <h3>Web Shop product</h3>
+                                <p>網路商品設計</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-delay="500">
+                    <a href="works4.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d04.jpg" />
+                            <figcaption>
+                                <h3>Web Design</h3>
+                                <p>網頁設計</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-right"
+                    data-aos-duration="1000" data-aos-delay="500">
+                    <a href="works5.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d05.jpg" />
+                            <figcaption>
+                                <h3>APP UI Design</h3>
+                                <p>APP 介面設計</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-right"
+                    data-aos-duration="1000">
+                    <a href="works6.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d06.jpg" />
+                            <figcaption>
+                                <h3>3DS Max Works</h3>
+                                <p>3D 設計作品</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-left"
+                    data-aos-duration="1000">
+                    <a href="works7.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d07.jpg" />
+                            <figcaption>
+                                <h3>Paint</h3>
+                                <p>手繪</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+                <div class="portfolio-img col-lg-3 col-md-6 col-sm-6 col-xs-12 grid" data-aos="fade-left"
+                    data-aos-duration="1000" data-aos-delay="500">
+                    <a href="works8.html">
+                        <figure class="effect-layla"> <img class="img-responsive" src="images/d08.jpg" />
+                            <figcaption>
+                                <h3>Photo</h3>
+                                <p>寫真攝影</p>
+                                <p>View more...</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <a class="demo_web" href="demo_web.html">Demo Web</a>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact wow fadeInUp">
+        <div class="contact-container row">
+            <h1 class="text-center">CONTACT</h1>
+
+            <div class="contact">
+                <dl class="dl-horizontal">
+                    <ul>
+                        <li class="info_list">
+                            <dt class="list_title">行動電話</dt>
+                            <dd class="list_content">0930-942831</dd>
+                        </li>
+                        <li class="info_list">
+                            <dt class="list_title">聯絡信箱</dt>
+                            <dd class="list_content">ajef1977@gmail.com</dd>
+                        </li>
+
+                    </ul>
+                </dl>
+            </div>
+
+            <!--
+                <form id="form" class="topBefore">
+
+                    <input id="name" type="text" placeholder="NAME">
+                    <input id="email" type="text" placeholder="E-MAIL">
+                    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                    <input id="submit" type="submit" value="GO!">
+
+                </form>
+                -->
+        </div>
+    </section>
+
+
+    <footer>
+        <p class="text-center">Copyright All Rights Reserved.</p>
+    </footer>
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+
+
+    <script src='js/jquery-3.3.1.js'></script>
+    <script src='js/bootstrap 4.0/bootstrap_4.0.js'></script>
+    <script src="js/index.js"></script>
+    <!-- <script src="js/cursor/cursor.js"></script> -->
+    <script src="js/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

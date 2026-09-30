@@ -1,0 +1,75 @@
+body main.page .main_body {
+  width: 100%;
+}
+body main.page .main_body .content_wrap {
+  max-width: 1140px;
+  padding: 30px 15px 0;
+  margin: 0 auto 0;
+}
+body main.page .main_body .content_wrap a.btn_return {
+  margin: 0 0 20px 0;
+}
+body main.page .main_body ul.list_group {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #eee;
+  border-radius: 5px;
+}
+body main.page .main_body ul.list_group li.list {
+  width: 100%;
+  padding: 10px;
+  margin: 0 0 8px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+body main.page .main_body ul.list_group li.list .label {
+  width: 10%;
+  min-width: 70px;
+  color: var(--color_text);
+  font-size: var(--label_font_size);
+  line-height: 2.5em;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+}
+body main.page .main_body ul.list_group li.list .label.progress_tracking {
+  min-width: 250px;
+}
+body main.page .main_body ul.list_group li.list .text {
+  width: 100%;
+  color: var(--color_text);
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+body main.page .main_body ul.list_group li.list input {
+  border: 1px solid #aaa;
+}
+body main.page .main_body ul.list_group li.list textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: var(--text_font_size);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  body main.page .main_body .tab_wrap .tab-content .content_wrap .content_frame ul.list_group li.list {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  body main.page .main_body .tab_wrap .tab-content .content_wrap .content_frame ul.list_group li.list .label {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  body main.page .main_body ul.list_group li.list {
+    padding: 10px 0;
+  }
+}/*# sourceMappingURL=apply_repair.css.map */

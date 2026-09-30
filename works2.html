@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AJ Studio</title>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viewport.css">
+
+</head>
+
+<body>
+    <works_header>
+        <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn"
+                onclick="closeNav()">&times;</a>
+            <!-- <h2 class="border-frame"><a onclick="closeNav()" href="index.html">Home</a></h2>
+            <h2><a onclick="closeNav()" href="works1.html">CIS</a></h2>
+            <h2><a onclick="closeNav()" href="works2.html">Graphic Design</a></h2>
+            <h2><a onclick="closeNav()" href="works3.html">Web Shop product</a></h2>
+            <h2><a onclick="closeNav()" href="works4.html">Web Design</a></h2>
+            <h2><a onclick="closeNav()" href="works5.html">APP UI Design</a></h2>
+            <h2><a onclick="closeNav()" href="works6.html">3DS Max Works</a></h2>
+            <h2><a onclick="closeNav()" href="works7.html">Paint</a></h2>
+            <h2><a onclick="closeNav()" href="works8.html">Photo</a></h2>
+            <h2><a onclick="closeNav()" href="demo1.html">Effect 1</a></h2>
+            <h2><a onclick="closeNav()" href="demo2.html">Effect 2</a></h2> -->
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()"><i class="menu-button fa fa-bars" aria-hidden="true"></i></span>
+        <!--            <div class="chevron-container"> <a href="#"><span onclick="scrollPage()"><i class="fa fa-chevron-down" aria-hidden="true"></i></span></a> </div>-->
+    </works_header>
+
+    <div class="works_container">
+        <a class="logo_link" href="index.html">
+            <img src="images/logo.svg">
+        </a>
+        <h1 class="works_title">平面設計<span>Graphic Design</span></h1>
+        <ul id="lightgallery" class="list-unstyled row">
+            <!-- <li class="works_img_frame" data-src="images/works/02/01.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/01.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/02.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/02.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/03.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/03.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/04.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/04.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/05.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/05.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/06.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/06.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/07.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/07.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/08.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/08.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/09.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/09.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/10.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/10.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/11.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/11.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/12.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/12.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/13.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/13.jpg">
+                </a>
+            </li>
+
+            <li class="works_img_frame" data-src="images/works/02/14.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/14.jpg">
+                </a>
+            </li>
+
+            <li class="works_img_frame" data-src="images/works/02/15.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/15.jpg">
+                </a>
+            </li>
+
+            <li class="works_img_frame" data-src="images/works/02/16.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/16.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/17.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/17.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/18.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/18.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/19.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/19.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/20.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/20.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/21.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/21.jpg">
+                </a>
+            </li>
+            <li class="works_img_frame" data-src="images/works/02/22.jpg" data-sub-html="<h4></h4><p></p>">
+                <a href="">
+                    <img class="img-responsive" src="images/works/02/22.jpg">
+                </a>
+            </li> -->
+        </ul>
+
+    </div>
+
+
+
+    <div class="work_footer">
+        <p class="text-center">Copyright Holder All Rights Reserved.</p>
+    </div>
+
+
+    <script src='js/jquery-3.3.1.js'></script>
+    <script src="js/index.js"></script>
+    <script src="js/lightgallery/lightgallery.js"></script>
+    <script src="js/lightgallery/lg-fullscreen.js"></script>
+    <script src="js/lightgallery/lg-autoplay.js"></script>
+    <script src="js/lightgallery/lg-zoom.js"></script>
+    <script src="js/lightgallery/lg-pager.js"></script>
+    <script src="js/lightgallery/jquery.mousewheel.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            var gallery_data = [{
+                    "img_name": "01",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "02",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "03",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "04",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "05",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "06",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "07",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "08",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "09",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "10",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "11",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "12",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "13",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "14",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "15",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "16",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "17",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "18",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "19",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "20",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "21",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "22",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "23",
+                    "title": "MLS Banner",
+                    "narrative": "01"
+                },
+                {
+                    "img_name": "24",
+                    "title": "MLS Banner",
+                    "narrative": "02"
+                },
+                {
+                    "img_name": "25",
+                    "title": "MLS Banner",
+                    "narrative": "03"
+                },
+                {
+                    "img_name": "26",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "27",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "28",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "29",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "30",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "31",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "32",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "33",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "34",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "35",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "36",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "37",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "38",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "39",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "40",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "41",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "42",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "43",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "44",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "45",
+                    "title": "",
+                    "narrative": ""
+                },
+                {
+                    "img_name": "46",
+                    "title": "",
+                    "narrative": ""
+                },
+            ];
+
+            var htmlStr = "";
+            var i = 2;
+
+            //取2位元不足補0 - start
+            function bit2(num, length) {
+                if ((num + "").length >= length) {
+                    return num;
+                }
+                return bit2("0" + num, length)
+            }
+            //取2位元不足補0 - end
+            var section_num = bit2(i, 2);
+
+            $.each(gallery_data, function (key, obj) {
+
+                gallery_img_html = '<img class="img-responsive" src="images/works/' + section_num +
+                    '/' + obj.img_name + '.jpg">';
+                htmlStr +=
+                    '<li class="works_img_frame" data-src="images/works/' + section_num + '/' + obj
+                    .img_name + '.jpg" data-sub-html="<h4>' + obj.title + '</h4><p>' + obj.narrative +
+                    '</p>">';
+                htmlStr += '<a href="">';
+                htmlStr += gallery_img_html;
+                htmlStr += '</a>';
+                htmlStr += '</li>';
+                i++;
+
+            });
+
+            $('#lightgallery').html(htmlStr);
+        });
+
+
+        $(document).ready(function () {
+            $('#lightgallery').lightGallery();
+        });
+    </script>
+
+
+</body>
+
+</html>

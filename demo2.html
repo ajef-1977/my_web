@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AJ Studio</title>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/viewport.css">
+
+</head>
+
+<body>
+    <works_header>
+        <div id="mySidenav" class="sidenav"> <a href="javascript:void(0)" class="closebtn"
+                onclick="closeNav()">&times;</a>
+            <!-- <h2 class="border-frame"><a onclick="closeNav()" href="index.html">Home</a></h2>
+            <h2><a onclick="closeNav()" href="works1.html">CIS</a></h2>
+            <h2><a onclick="closeNav()" href="works2.html">Graphic Design</a></h2>
+            <h2><a onclick="closeNav()" href="works3.html">Web Shop product</a></h2>
+            <h2><a onclick="closeNav()" href="works4.html">Web Design</a></h2>
+            <h2><a onclick="closeNav()" href="works5.html">APP UI Design</a></h2>
+            <h2><a onclick="closeNav()" href="works6.html">3DS Max Works</a></h2>
+            <h2><a onclick="closeNav()" href="works7.html">Paint</a></h2>
+            <h2><a onclick="closeNav()" href="works8.html">Photo</a></h2>
+            <h2><a onclick="closeNav()" href="demo1.html">Effect 1</a></h2>
+            <h2><a onclick="closeNav()" href="demo2.html">Effect 2</a></h2> -->
+        </div>
+        <!-- Use any element to open the sidenav -->
+        <span onclick="openNav()"><i class="menu-button fa fa-bars" aria-hidden="true"></i></span>
+
+    </works_header>
+
+
+    <div class="demo_container">
+        <a class="logo_link" href="index.html">
+            <img src="images/logo.svg">
+        </a>
+        <h1 class="works_title">視差捲動展示</h1>
+        <div class="demo2">
+            <div class="img-holder" data-image="images/demo2/season1.jpg" data-width="1600" data-height="900"
+                data-extra-height="50"></div>
+
+            <section>
+                <p>響應式網頁設計（英語：Responsive web design，通常縮寫為RWD），或稱自適應網頁設計、回應式網頁設計、對應式網頁設計。
+                    是一種網頁設計的技術做法，該設計可使網站在不同的裝置（從桌面電腦顯示器到行動電話或其他行動產品裝置）上瀏覽時對應不同解析度皆有適合的呈現，減少使用者進行縮放、平移和捲動等操作行為。對於網站設計師和前端工程師來說，有別於過去需要針對各種裝置進行不同的設計，使用此種設計方式將更易於維護網頁。此概念於2010年5月由國外著名網頁設計師Ethan
+                    Marcotte所提出。</p>
+
+                <p>採用 RWD 設計的網站]使用CSS3 Media queries，即一種對 @media 規則的擴充功能，以及串流的基於比例的網格和自適應大小的圖像以適應不同大小的裝置：
+                    串流網格概念要求頁面元素使用相對單位如百分比或字型排印學調整大小，而不是絕對的單位如像素或點。靈活的圖像也以相對單位調整大小（最大到 100%），以防止它們顯示在包含它們的元素外面。 Media
+                    queries允許網頁根據存取站點裝置的特點而使用不同 CSS 樣式規則，最常用的是瀏覽器的寬度。
+                    回應式網頁設計變得更加重要，因為移動流量現在佔網際網路流量的一半以上。因此，Google宣佈行動裝置時代的到來（Mobilegeddon）（2015年4月21日），並開始提高移動友好的網站的評級，如果搜尋是被從一個行動裝置發起[15]。
+                </p>
+
+
+            </section>
+
+            <div class="img-holder" data-image="images/demo2/season2.jpg" data-cover-ratio="0.75" data-width="1680"
+                data-height="1050"></div>
+
+            <section>
+                <p>移動優先，不引人注目的 JavaScript 和漸進增強[編輯] 「移動優先」和「Unobtrusive JavaScript」/「漸進增強」（考慮一種新的網站設計時的策略）是先於 RWD 的相關概念:
+                    基礎的手機瀏覽器不理解 JavaScript 或者 media queries，因此建議的做法是建立一個只有基本框架的網站，然後再為智慧型手機和 PC
+                    提供增強功能；而不是試著「優雅降級」——讓一個複雜的，圖像豐富的站點工作在最基本的行動電話上。</p>
+
+                <p>基於瀏覽器，特性或裝置探測的漸進增強[編輯] 在一個網站必須支援缺乏 JavaScript 的基本的行動裝置的情況下，瀏覽器 (用戶代理) 探測 (也叫做「瀏覽器嗅探」)，和行動裝置探測是推斷某些
+                    HTML 和 CSS 特性是否受支援的兩種方式 (作為漸進增強的基礎)—然而，這些方法不完全可靠。 對於能力更強的行動電話和 PC，可以直接測試瀏覽器對 HTML/CSS 功能的支援
+                    (識別裝置或者用戶代理字串) 的 JavaScript 框架如 Modernizr, jQuery 和 jQuery
+                    Mobile等流行起來。Polyfills可以被用於添加對一些功能的支援—比如，支援 media queries (RWD 所需要的)，和在 (舊版本) Internet Explorer 上提高
+                    HTML 5 支援。功能探測在較舊的瀏覽器上也可能不完全可靠: 某些也許會報告一個特性可用，然而它或者是缺失，或者是實現的如此拙劣以至實質上無法工作。</p>
+
+                <p>RWD 的一個問題是橫幅廣告和影片不是串流的。而搜尋廣告和 (橫幅)
+                    顯示廣告支援特定的裝置平台目標，和為桌面，智慧型手機和基本的行動裝置提供不同的廣告尺寸格式。可以為不同平台使用不同的著陸頁URL，或者可以用 AJAX 顯示一個頁面上的不同廣告變體。</p>
+
+
+            </section>
+
+            <div class="img-holder" data-image="images/demo2/season3.jpg"></div>
+
+            <section>
+                <p>Google 建議您使用 RWD 響應式網頁設計</p>
+
+                <p>「只要做一個網站，會根據裝置大小不同，自動變換排版方式」，可支援多種瀏覽裝置，目前有 38% 以上的用戶使用手機或平版上網，RWD
+                    網站可提供最佳解決方案，有利於提升搜尋排名，方便各種使用者瀏覽，節省設計成本，更利於網路行銷，讓網站效用最大化！</p>
+
+                <p>Google官方解釋是無論使用者透過何種裝置瀏覽網頁 (包括桌上型電腦、平板電腦或手機)，該網頁一律使用相同的網址和程式碼，只不過網頁的顯示效果會依據螢幕尺寸進行調整。 因此，Google 建議您使用
+                    RWD，而非其他設計樣式。</p>
+
+                <p>2015.08.17 Google 在自己的網站上說明了 「Google recommends web masters follow the industry best practice of
+                    using responsive web design, namely serving the same HTML for all devices and using only CSS media
+                    queries to decide the rendering on each device.」</p>
+
+                <p>Google 建議所有的網站使用 RWD 技術做為標準，讓網頁在不同的裝置顯示不同的結果 (依CSS)。有助於網站排名優化 (SEO)，故強烈建議以 RWD 方式製作網站。</p>
+
+
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="work_footer">
+        <p class="text-center">2021 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+
+    <!--    <script src='https://code.jquery.com/jquery1-2.2.4.js'></script>-->
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/jquery.imageScroll.min.js"></script>
+    <script>
+        $('.img-holder').imageScroll({});
+    </script>
+
+
+
+</body>
+
+</html>
